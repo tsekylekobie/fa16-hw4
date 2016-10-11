@@ -1,0 +1,47 @@
+<table>
+	<caption>My Cats</caption>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+	</tr>
+	<% @cats.each do |c| %>
+		<tr>
+			<td><%= c.id%></td>
+			<td><%= c.name%></td>
+		</tr>
+	<% end %>
+</table>
+
+<table>
+	<caption>Todo List</caption>
+	<tr>
+		<th></th>
+		<th>Tasks</th>
+		<th>Finished</th>
+	</tr>
+	<% @todos.each do |t| %>
+		<tr>
+			<td><%= t.id%></td>
+			<td><%= t.tasks%></td>
+			<td><%= t.finished%></td>
+		</tr>
+	<% end %>
+</table>
+
+<table>
+	<caption>My Users</caption>
+	<tr>
+		<th>ID</th>
+		<th>Username</th>
+		<th>Age</th>
+		<th>Email</th>
+	</tr>
+	<% @users.each do |u| %>
+		<tr>
+			<td><%= u.id%></td>
+			<td><%= u.username%></td>
+			<td><%= u.age%></td>
+			<td><%= u.email%></td>
+		</tr>
+	<% end %>
+</table>
